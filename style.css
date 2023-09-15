@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+
+}
+nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    box-shadow: 0px 0px 5px ;
+}
+.logo img
+{
+    margin: 2%;
+  height: 80px;
+  width: 80px;
+  padding: 10px ;
+  border-radius: 50%;
+  background-color: royalblue;
+}
+.nav-link{
+    display: flex;
+    gap:22px;
+}
+.nav-item{
+    list-style: none;
+    font-weight: 600;
+    font-size: 1.3rem;
+    
+}
+.nav-item:hover {
+
+    border-bottom: 2px solid black;
+    cursor:pointer;
+    color: cadetblue;
+}
+.nav-item:active{
+    color: chartreuse;
+}
+.nav-item.active{
+    color: white;
+    background-color: royalblue ;
+    padding: 2%;
+    border-radius: 5px;
+}
+.search-bar{
+    /* border:2px solid royalblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.search-bar input{
+     width: 200px;
+     height: 35px;
+     outline:none;
+     box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+     /* border-radius: 4px; */
+     padding: 2%;
+     font-weight: 600;
+     /* border:2px solid royalblue */
+}
+.search-bar button{
+    padding: 5px 20px;
+    border: none;
+    text-align: center;
+    /* border-radius: 4px; */
+    background-color: royalblue;
+    color: aliceblue;
+    font-weight: 700;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+
+}
+.search-bar button:active{
+    transform: scale(0.98);
+    cursor: pointer;
+    opacity: 0.5;
+}
+#card-container{
+    width: auto;
+    height: auto;
+    margin: 0px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: justify;
+    align-items: center;
+}
+.card{
+    width:350px;
+    border: 1px solid lightblue;
+    margin: 2%;
+    border-radius: 5px;
+    /* padding: 2%; */
+    overflow: hidden;
+    transition: all 1s ease;
+    cursor: pointer;
+
+}
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.card .thumbnail img{
+    width: 100%;
+    object-fit: cover;
+}
+@media 
+only screen and (max-width : 600px){
+.nav-item{
+    display: none;
+}
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News-Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- tailwind -->
+</head>
+<body>
+  <header>
+    <nav class="">
+        <div class="logo cursor-pointer " onclick="reload()">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO06_q_WvWRoT2kP2T7Mk23dND5Zg9a_bvqA&usqp=CAU" alt="">
+        </div>
+        <ul class="nav-link">
+            <li class="nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+            <li class="nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+            <li class="nav-item" id="Politics" onclick="onNavItemClick('Politics')" >Politics</li>
+            <li class="nav-item" id="Technology" onclick="onNavItemClick('Technology')" >Technology</li>
+
+        </ul>
+        <div class="search-bar">
+            <input type="search" name="" id="search-text" placeholder="search for...">
+            <button id="search-Button" class="btn">search</button>
+        </div>
+    </nav>
+  </header>
+  <main>
+    <div id="card-container">
+       
+    </div>
+  </main>
+
+  <template id="card-template">
+    <!-- card template start here  -->
+     <div class="card" id="card">
+    <div class="thumbnail">
+        <img src="https://placeholder.com/400X200" alt="" class="NewsImg">
+    </div>
+    <div class="card-content">
+        <h3 id="News-title" class="font-bold text-xl"></h3>
+        <h6 id="news-source" class="news-source text-gray-500"></h6>
+        <p id="news-decs" class="news-decs"></p>
+    </div>
+</div>
+</template>
+
+
+
+
+
+
+
+
+
+    <script src="script.js" ></script>
+</body>
+</html>
+
+
+<!-- api key = 3350599596e74335924d018b74f0d4b0 -->
