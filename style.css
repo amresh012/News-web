@@ -18,7 +18,7 @@ nav{
   width: 80px;
   padding: 10px ;
   border-radius: 50%;
-  background-color: royalblue;
+  background-color: black;
 }
 .nav-link{
     display: flex;
@@ -84,7 +84,7 @@ nav{
     margin: 0px 10%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: justify;
+    justify-content: center;
     align-items: center;
 }
 .card{
